@@ -193,7 +193,7 @@
   /**Header end**/
   /**Landing Begins**/
   .Landing{
-    background-image: url(/images/Landing.png);
+    background-image: url("images/Landing.png");
     background-size: cover;
     height: calc(100vh - 72px);
     width: 100%;
@@ -370,7 +370,7 @@ display: none;
   /**Section 1 ends**/
   /**Section 2 begins**/
   .section2{
-    background-image: url("/images/sec2.png");
+    background-image: url("images/sec2.png");
     background-size: cover;
     height: 70vh;
   }
@@ -475,7 +475,7 @@ display: none;
 /**Section 3 ends**/
 /**Section 4 starts**/
 .section4{
-  background-image: url("/images/sec4.png");
+  background-image: url("images/sec4.png");
   background-size: cover;
   position: relative;
   height: 60vh;
