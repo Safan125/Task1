@@ -17,6 +17,9 @@
   }
   .parent{
   }
+  button{
+    border-style: none;
+  }
   .container{
   padding-left: 12px;
   padding-right: 12px;
@@ -255,6 +258,7 @@
     box-shadow: none;
     color: white;
     width: 40%;
+    margin: 2px;
     font-weight: 400;
   }
   .Landing .buttons button:last-child{
@@ -708,17 +712,102 @@ display: none;
   }
 }
 /**Section 7 ends**/
-/**footer begins**/
-.footer{
+.footer {
   padding-bottom: 30px;
   padding-top: 50px;
-  background-color:#283646 ;
+  background-color: #283646;
+  color: white;
 }
-.footer .credits{
+
+.footer .nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 10%;
+}
+
+.footer .links a {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .part2 {
+  flex: 1;
+}
+
+.footer .part2 p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer .mail {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF17;
+  border-radius: 20px;
+  border: solid 1px #92989f;
+  padding: 5px 10px;
+  gap: 10px;
+}
+
+.footer .mail input[type="email"] {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #92989f;
+  font-size: 12px;
+  outline: none;
+}
+
+.footer .mail button {
+  background-color: var(--sec-col, #007bff);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.footer .credits {
   display: flex;
   justify-content: space-between;
-  color: #92989F ;
+  color: #92989f;
   font-size: 12px;
   flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: center;
 }
-/**footer ends**/
+@media (max-width: 970px) {
+  .footer .nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .footer .links {
+      margin-bottom: 10px;
+  }
+
+  .footer .mail {
+      width: 100%;
+      padding: 8px;
+      font-size: 10px;
+  }
+
+  .footer .credits {
+      flex-direction: column;
+      font-size: 10px;
+  }
+}
+
+@media (max-width: 620px) {
+  .footer img{
+    display: none;
+  }
+  .footer .nav .links{
+    font-size: 10px;
+  }
+}
